@@ -35,6 +35,8 @@
  */
 - (VKRequest *)get;
 
+- (VKRequest *)getWithTags;
+
 /**
  *   Returns detailed information about user or community documents.
  *   https://vk.com/dev/docs.get

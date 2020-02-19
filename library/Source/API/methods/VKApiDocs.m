@@ -33,6 +33,10 @@
   return [self prepareRequestWithMethodName:@"get" parameters:nil modelClass:[VKDocsArray class]];
 }
 
+- (VKRequest *)getWithTags {
+  return [self prepareRequestWithMethodName:@"get" parameters:@{@"return_tags": @1} modelClass:[VKDocsArray class]];
+}
+
 - (VKRequest *)get:(NSInteger)count {
   return [self prepareRequestWithMethodName:@"get" parameters: @{VK_API_COUNT : @(count)} modelClass:[VKDocsArray class]];
 }
